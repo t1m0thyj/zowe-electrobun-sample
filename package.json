@@ -1,0 +1,25 @@
+{
+  "name": "zowe-electrobun",
+  "version": "1.0.0",
+  "description": "Zowe Jobs Viewer built with Electrobun",
+  "private": true,
+  "scripts": {
+    "start": "bun run build:dev && electrobun dev",
+    "build:dev": "bun install && electrobun build",
+    "build:stable": "electrobun build --env=stable",
+    "test": "bun test src/test/"
+  },
+  "dependencies": {
+    "@zowe/core-for-zowe-sdk": "^8.0.0",
+    "@zowe/imperative": "^8.0.0",
+    "@zowe/secrets-for-zowe-sdk": "^8.0.0",
+    "@zowe/zos-jobs-for-zowe-sdk": "^8.0.0",
+    "electrobun": "^1.0.0",
+    "@tanstack/table-core": "^8.0.0",
+    "preact": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
+  }
+}

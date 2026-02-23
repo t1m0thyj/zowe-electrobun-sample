@@ -1,0 +1,5 @@
+build/
+node_modules/
+.electrobun
+*.log
+.DS_Store
