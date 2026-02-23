@@ -51,7 +51,7 @@ jobs:
 
       - run: bun install
 
-      - run: electrobun build --env=stable
+      - run: bunx electrobun build --env=stable
 
       - uses: actions/upload-artifact@v4
         with:
